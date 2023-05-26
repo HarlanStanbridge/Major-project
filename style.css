@@ -1,0 +1,49 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    /* The image used */
+    background-image: url("https://mobirise.com/extensions/hotelm4/assets/images/background13-1920x1280.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+
+
+
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: rgba(68, 71, 72, 0.39);
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #ff0000;
+    color: white;
+}
