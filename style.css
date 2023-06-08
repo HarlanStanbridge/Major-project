@@ -19,6 +19,10 @@ body {
 
 }
 
+h5 {
+    background-color: rgba(68, 71, 72, 0.39);
+    background-size: cover;
+}
 
 
 
@@ -46,4 +50,18 @@ h1 {
 .button:hover {
     background-color: #ff0000;
     color: white;
+}
+.br {
+    display: block;
+    margin-bottom: 0em;
+}
+  
+.brmedium {
+    display: block;
+    margin-bottom: 1em;
+}
+  
+.brlarge {
+    display: block;
+    margin-bottom: 2em;
 }
