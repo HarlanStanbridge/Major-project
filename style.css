@@ -1,67 +1,97 @@
-body,
-html {
-    height: 100%;
-    margin: 0;
-}
-
 body {
-    /* The image used */
-    background-image: url("https://mobirise.com/extensions/hotelm4/assets/images/background13-1920x1280.jpg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
     text-align: center;
-
-}
-
-h5 {
-    background-color: rgba(68, 71, 72, 0.39);
-    background-size: cover;
-}
-
-
-
-h1 {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-family: "Lucida Console", "Courier New", monospace;
-    background-color: rgba(68, 71, 72, 0.39);
-}
-
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  h5 {
+    font-weight: bold;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  select,
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 16px;
-    margin: 4px 2px;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.6);
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
     cursor: pointer;
-    border-radius: 8px;
-}
-
-.button:hover {
-    background-color: #ff0000;
-    color: white;
-}
-.br {
-    display: block;
-    margin-bottom: 0em;
-}
+    transition: background-color 0.3s ease;
+  }
   
-.brmedium {
-    display: block;
-    margin-bottom: 1em;
-}
+  button:hover {
+    background-color: #0056b3;
+  }
   
-.brlarge {
-    display: block;
-    margin-bottom: 2em;
-}
+  .button {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .message {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    button {
+      font-size: 14px;
+    }
+  }
+  
