@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <p>
+
+  <div class="container">
     <h1>Booking page</h1>
     <span class="brlarge"></span>
     <h5>Your first name</h5>
     <span class="brmedium"></span>
     <input type="text" placeholder="First name" id="firstName">
-
 
     <h5>Your Surname</h5>
     <span class="brmedium"></span>
@@ -25,18 +25,36 @@
     <h5>Check in Date:</h5>
     <span class="brmedium"></span>
     <input type="date" id="checkInDate">
-    <span class="br"></span> 
+    <span class="br"></span>
+
     <h5>Check out Date:</h5>
-    <span class="br"></span> 
+    <span class="br"></span>
     <input type="date" id="checkOutDate">
+
+    <h5>Room Type:</h5>
+    <span class="brmedium"></span>
+    <select id="roomType">
+      <option value="single">Single Room</option>
+      <option value="double">Double Room</option>
+      <option value="suite">Suite</option>
+    </select>
+
+    <h5>Number of Guests:</h5>
+    <span class="brmedium"></span>
+    <input type="number" id="numGuests" min="1" max="6" placeholder="1" required>
+
+    <h5>Contact Email:</h5>
+    <span class="brmedium"></span>
+    <input type="email" id="contactEmail" placeholder="you@example.com" required>
 
     <button id="bookbtn">Book</button>
     <span class="brmedium"></span>
     <a href="home.html">
-        <button class="button">Back to Home Page</button>
+      <button class="button">Back to Home Page</button>
     </a>
-    </p>
-    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 
 </body>
 
