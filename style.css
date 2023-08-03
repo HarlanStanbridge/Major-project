@@ -1,3 +1,4 @@
+/* CSS for Home Page */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -5,6 +6,58 @@ body {
     padding: 0;
   }
   
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+  }
+  
+  .button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+
+/* Add some spacing between the pictures and heading */
+.pictures-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style the images to have a border and a shadow effect */
+.pictures-container img {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Apply a scale effect on hover to make the images pop */
+.pictures-container img:hover {
+  transform: scale(1.1);
+}
+
+
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* CSS for Booking Page */
   .container {
     max-width: 500px;
     margin: 40px auto;

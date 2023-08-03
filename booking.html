@@ -14,40 +14,58 @@
   <div class="container">
     <h1>Booking page</h1>
     <span class="brlarge"></span>
-    <h5>Your first name</h5>
-    <span class="brmedium"></span>
-    <input type="text" placeholder="First name" id="firstName">
 
-    <h5>Your Surname</h5>
-    <span class="brmedium"></span>
-    <input type="text" placeholder="Surname" id="Surname">
+    <div id="loginForm">
+      <h3>Login to proceed with booking</h3>
+      <input type="text" placeholder="Username" id="username">
+      <input type="password" placeholder="Password" id="password">
+      <button id="loginBtn">Login</button>
+    </div>
 
-    <h5>Check in Date:</h5>
-    <span class="brmedium"></span>
-    <input type="date" id="checkInDate">
-    <span class="br"></span>
+    <div id="bookingForm" style="display: none;">
+      <h5>Your first name</h5>
+      <span class="brmedium"></span>
+      <input type="text" placeholder="First name" id="firstName">
 
-    <h5>Check out Date:</h5>
-    <span class="br"></span>
-    <input type="date" id="checkOutDate">
+      <h5>Your Surname</h5>
+      <span class="brmedium"></span>
+      <input type="text" placeholder="Surname" id="Surname">
 
-    <h5>Room Type:</h5>
-    <span class="brmedium"></span>
-    <select id="roomType">
-      <option value="single">Single Room</option>
-      <option value="double">Double Room</option>
-      <option value="suite">Suite</option>
-    </select>
+      <h5>Check-in Date:</h5>
+      <span class="brmedium"></span>
+      <input type="date" id="checkInDate">
+      <span class="br"></span>
 
-    <h5>Number of Guests:</h5>
-    <span class="brmedium"></span>
-    <input type="number" id="numGuests" min="1" max="6" placeholder="1" required>
+      <h5>Check-out Date:</h5>
+      <span class="br"></span>
+      <input type="date" id="checkOutDate">
 
-    <h5>Contact Email:</h5>
-    <span class="brmedium"></span>
-    <input type="email" id="contactEmail" placeholder="you@example.com" required>
+      <h5>Room Type:</h5>
+      <span class="br"></span>
+      <select id="roomType">
+        <option value="single">Single Room</option>
+        <option value="double">Double Room</option>
+        <option value="suite">Suite</option>
+      </select>
 
-    <button id="bookbtn">Book</button>
+      <h5>Number of Guests:</h5>
+      <span class="br"></span>
+      <input type="number" min="1" id="numGuests">
+
+      <h5>Contact Email:</h5>
+      <span class="brmedium"></span>
+      <input type="email" placeholder="Email" id="contactEmail">
+
+      <h3>Hotel Pictures</h3>
+      <div class="pictures-container">
+        <img src="https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg" alt="Hotel Image 1">
+        <img src="https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?w=2000" alt="Hotel Image 2">
+        <img src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" alt="Hotel Image 3">
+      </div>
+
+      <button id="bookbtn">Book</button>
+    </div>
+
     <span class="brmedium"></span>
     <a href="home.html">
       <button class="button">Back to Home Page</button>
